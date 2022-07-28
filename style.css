@@ -90,9 +90,7 @@ section {
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    display: flex;
     padding-top: 100px;
-    flex-wrap: wrap;
 }
 
 .box {
@@ -106,7 +104,6 @@ section {
 /********* Start *********/
 
 .isNotFlex {
-    display: block;
     position: relative;
 }
 
@@ -195,3 +192,67 @@ section {
     top: 20%;
     text-indent: 30px each-line;
 }
+
+/********* CV *********/
+
+.education {
+    display: flex;
+}
+
+.eduPoint h4 {
+    border-color: #5c557e;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    padding: 10px;
+}
+.eduPoint:first-of-type h4 {
+    border-left: 0;
+}
+
+.eduPoint:nth-of-type(2) {
+    margin-top: 46px;
+}
+.eduPoint:nth-of-type(3) {
+    margin-top: calc(46px * 2);
+}
+.eduPoint:nth-of-type(4) {
+    margin-top: calc(46px * 3);
+}
+.eduPoint:nth-of-type(5) {
+    margin-top: calc(46px * 4);
+}
+.eduPoint:nth-of-type(6) {
+    margin-top: calc(46px * 5);
+}
+
+.jobs {
+    display: flex;
+}
+
+.job h4 {
+    border-color: #5c557e;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    padding: 10px;
+}
+.job:first-of-type h4 {
+    border-left: 0;
+}
+
+.job:nth-of-type(2) {
+    margin-top: 46px;
+}
+.job:nth-of-type(3) {
+    margin-top: calc(46px * 2);
+}
+.job:nth-of-type(4) {
+    margin-top: calc(46px * 3);
+}
+.job:nth-of-type(5) {
+    margin-top: calc(46px * 4);
+}
+.job:nth-of-type(6) {
+    margin-top: calc(46px * 5);
+}
+
+
