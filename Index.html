@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700,800;900&display=swap" rel="stylesheet">
 	<title>Andreas Lamplmair</title>
 </head>
 <body id="start">
@@ -21,8 +24,8 @@
 
 	</header>
 	<main>
-		<div class="container">
-			<section class="isNotFlex">
+		<section id="first" class="isNotFlex">
+			<div class="container">
 				<div id="whoAmI" class="box">
 					<img src="ich_dumm.jpg" alt="Porträt von Andreas Lamplmair" />
 					<div>
@@ -38,7 +41,7 @@
 					</div>
 				</div>
 				<div id="myHobbies" class="box">
-					<h2>Und das sind meine schier unendlichen Hobbies</h2>
+					<h2 class="getBigger">Und das sind meine schier unendlichen Hobbies</h2>
 					<ul>
 						<li>reiten</li>
 						<li>yoga</li>
@@ -50,8 +53,6 @@
 						<li>Filme und Serien schauen</li>
 						<li>malen</li>
 						<li>zeichnen</li>
-					</ul>
-					<ul>
 						<li>lesen</li>
 						<li>Brettspiele spielen</li>
 						<li>saunieren</li>
@@ -68,23 +69,36 @@
 				<div id="circleMoment" class="box">
 					<h3>Ich bin daher ein Full-Cricle-Moment,<br> da ich von allem etwas kann.</h3>
 				</div>
-			</section>
-			<section id="motivation" class="isNotFlex">
+			</div>
+		</section>
+		<section id="motivation" class="isNotFlex bgGreen">
+			<div class="container">
 				<h2>So vielseitig bin ich nicht<br> nur in meiner Freizeit</h2>
 				<div id="creativ" class="box" >
-					<img src="dummyHorizontal.jpg" alt="Person und verschiedene kreative Projekte">
-					<p>gestalten und erschaffen sind schon immer meine Leidenschaft gewesen</p>
+					<img src="stricken.jpg" alt="Person und verschiedene kreative Projekte">
+					<p>
+						Ich gestalte und erschaffe gerne Neues. Sei es mit Nadel und
+						Faden einen Schal zu stricken, aus Holz etwas zu schnitzen oder einen Text zu schreiben.
+					</p>
 				</div>
 				<div id="maths" class="box">
 					<img src="mathe-formel.jpg" alt="Mathematische Gleichung" />
-					<p>und auch <br>Mathe</p>
+					<p>Mathematik war eines meiner Lieblingsfächer in der Schule. Selbst heute löse ich noch immer gerne
+					Rätsel aller Art.</p>
 				</div>
 				<div id="eqauls" class="box">
-					<p>und beides <br>zusammen ergibt kreative,<br> mathematische Lösungen zu finden,<br> was programmieren<br> für mich ist.<br> <span>Spaß</span></p>
+					<p>
+						Und beides zusammen ergibt für mich Programmieren:<br>
+						Egal ob gerade eine schwierige Aufgabe auf mich zukommt. Ich weiß, dass es eine Lösung geben muss.<br>
+						Auch wenn es zuerst nur zu einem Kompromiss kommen kann.<br>
+						Mit genug Ausdauer und viel Erfindergeist kommt man bestimmt zum besten möglichen Ergebnis.
+					</p>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="cv">
+		<section id="cv">
+			<div class="container">
 				<h2>Was ich bisher gemacht habe?</h2>
 				<h3>Ausbildungs Sicht: So manches</h3>
 				<div class="education">
@@ -137,7 +151,7 @@
 					</div>
 				</div>
 
-				<h3>Aus der beruflicher Sicht: Viel verschiedenes</h3>
+				<h3>beruflicher Sicht: Viel verschiedenes</h3>
 				<div class="jobs">
 					<div class="job">
 						<div class="jobTitle"><h4>IT-Support</h4></div>
@@ -147,6 +161,14 @@
 						<p>
 							von Februar 2015<br>
 							bis Oktober 2015
+						</p>
+						<p>
+							<ul>
+								<li>First & Second Level Support</li>
+								<li>Instandhaltung der Hardware</li>
+								<li>Organisation der Auslieferung</li>
+								<li>Kleinlager&shy;management</li>
+							</ul>
 						</p>
 					</div>
 					<div class="job">
@@ -158,6 +180,14 @@
 							von Oktober 2015<br>
 							bis Februar 2016
 						</p>
+						<p>
+							<ul>
+								<li>First Level Support</li>
+								<li>Support-Hotline</li>
+								<li>Server&shy;administration, Exchange-Server</li>
+								<li>Instandhaltung der Hardware</li>
+							</ul>
+						</p>
 					</div>
 					<div class="job">
 						<div class="jobTitle"><h4>Fundraiser</h4></div>
@@ -168,15 +198,32 @@
 							von April 2016<br>
 							bis Juni 2016
 						</p>
+						<p class="left">
+							Straßenwerber bei:
+							<ul>
+								<li>Greenpeace</li>
+								<li>Kinderhilfswerk</li>
+								<li>Freiraum</li>
+							</ul>
+						</p>
 					</div>
 					<div class="job">
-						<div class="jobTitle"><h4>Web-Design/-Developement</h4></div>
+						<div class="jobTitle"><h4>Web-Design/&shy;-Developement</h4></div>
 						<p>
 							eRecruiter
 						</p>
 						<p>
 							von Juli 2016<br>
 							bis Oktober 2020
+
+						</p>
+						<p>
+							<ul>
+								<li>Bewerberportale und Inserate auf Kundendesign anpassen</li>
+								<li>Ansprechpartner für Bewerberportale und Inserate</li>
+								<li>Serverumgebung Administrieren</li>
+								<li>Teamlead</li>
+							</ul>
 						</p>
 					</div>
 					<div class="job">
@@ -188,49 +235,60 @@
 							von November 2021<br>
 							bis Februar 2022 <br>
 						</p>
-
+						<p>
+							<ul>
+								<li>Instandhaltung der Hardware</li>
+								<li>First & Second Level Support</li>
+								<li>Administration Serverumgebungen</li>
+								<li>Cybersecurity</li>
+							</ul>
+						</p>
 					</div>
 				</div>
-			</section>
-			<section id="projects">
+			</div>
+		</section>
+		<section id="projects" class="bgGreen">
+			<div class="container">
 				<h2>meine lieblings Projekte</h2>
 
 				<div class="projectBox">
 					<a href="Abschlussarbeit%20Andi.pdf" target="_blank">
-						<h2>Spirituell</h2>
+						<h3>Spirituell</h3>
 						<p>Ein Teil meiner Arbeit für den Diplom Energetiker</p>
-						<img src="dummy.jpg" alt="Cover von du hast dich wohl noch nie in einen Drachen verliebt"></a>
+						<img src="Test_Title.JPG" alt="Cover von du hast dich wohl noch nie in einen Drachen verliebt"></a>
 				</div>
 				<div class="projectBox">
 					<a href="https://www.erecruiter.net/p/kunden" target="_blank">
-						<h2>Arbeitsstelle</h2>
+						<h3>Arbeitsstelle</h3>
 						<p>Meine letzte Arbeitsstelle an der ich schon an unzähligen Webprojekte unserer Kunden mitgearbeitet hab</p>
-						<img src="dummyHorizontal.jpg" alt="eRecrutiter Kunden"></a>
+						<img src="eRecruiter_Kunden.jpg" alt="eRecrutiter Kunden"></a>
 				</div>
 				<div class="projectBox">
 					<a href="" target="_blank">
-						<h2>Mein neuestes Baby</h2>
-						<p>das CodersBay Projekt, mit dem ich zeigen will, dass Angular gar nicht so schwer ist.</p>
-						<img src="dummyHorizontal.jpg" alt=""></a>
+						<h3>Mein neuestes Baby</h3>
+						<p>das CodersBay Projekt, mit dem ich zeigen will, was ich sonst so kann.</p>
+						<img src="Illustration.jpg" alt=""></a>
 				</div>
-			</section>
-			<section id="contact" class="becomeColumn">
-				<h2>Interesse</h2>
+			</div>
+		</section>
+		<section id="contact" class="becomeColumn">
+			<div class="container">
+				<h2 class="getShadow">Interesse</h2>
 				<div class="contactBox">
 					<p>Dann schreib mir einen kleinen Brief</p>
 					<form action="mailto:andreas-lamplmair@gmx.at" method="post">
-						<p>
-              <label for="privat">Private</label><input type="radio" id="privat" name="checkIfPrivat" /> &nbsp;
-              <label for="company">Firma</label><input type="radio" id="company" name="checkIfPrivat" />
+						<p>Ist dein Anliegen privater oder beruflicher Natur?<br>
+              <input type="radio" id="privat" name="checkIfPrivat" value="private"/> <label for="privat">privater</label> <br>
+              <input type="radio" id="company" name="checkIfPrivat" value="firma" /> <label for="company">beruflicher</label>
 						</p>
-						<p><label for="prename">Name</label> <input type="text" id="prename" /></p>
-						<p><label for="email">E-Mail</label> <input type="email" id="email"/></p>
+						<p><label for="prename">Dein Name</label> <input type="text" id="prename" /></p>
+						<p><label for="email">Deine E-Mail</label> <input type="email" id="email"/></p>
 						<p><label for="texte">Nachrichtenfeld</label><br> <textarea id="texte"></textarea></p>
 						<p><input type="submit" name="senden" value="abschicken"/></p>
 					</form>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<a href="#start"><span class="material-symbols-outlined">arrow_upward</span></a>
